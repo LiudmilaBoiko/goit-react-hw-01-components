@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Profile = ({avatar, name, tag, location, stats}) => {
+const Profile = ({name, tag, location, avatar, stats}) => {
   return <div class="profile">
     <div class="description">
       <img
@@ -32,11 +32,11 @@ const Profile = ({avatar, name, tag, location, stats}) => {
 }
 
 Profile.propTypes = {
-    avatar: PropTypes.string.isRequired,
     name: PropTypes.string.isRequired,
-    tag: PropTypes.string,
+    tag: PropTypes.string.isRequired,
     location: PropTypes.string,
-    stats: PropTypes.number,
+    avatar: PropTypes.string.isRequired,
+    stats: PropTypes.objectOf(PropTypes.number).isRequired,
 };
 
 export default Profile;
