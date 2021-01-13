@@ -12,9 +12,9 @@ function TransactionHistoryRaw({ type, amount, currency, id }) {
 
 TransactionHistoryRaw.propTypes = {
     type: PropTypes.string.isRequired,
-    amount: PropTypes.number.isRequired,
+    amount: PropTypes.string.isRequired,
     currency: PropTypes.string.isRequired,
-    id: PropTypes.number.isRequired,
+    id: PropTypes.string,
 };
 
 export default TransactionHistoryRaw;

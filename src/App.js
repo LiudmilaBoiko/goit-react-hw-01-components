@@ -7,7 +7,7 @@ import TransactionHistory from "./components/Transactions/TransactionHistory";
 import user from './user.json';
 import statistics from './statistical-data.json';
 import friends from './friends.json';
-import transactions from './statistical-data.json';
+import transactions from './transactions.json';
 
 export default function App() {
     return <div>

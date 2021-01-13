@@ -1,8 +1,9 @@
 import TransactionHistoryRaw from "./TransactionHistoryRaw";
+import s from './Transactions.module.css';
 
 function TransactionHistory({items}) {
     return (
-     <table class="transaction-history">
+     <table className={s.transactionHistory}>
       <thead>
          <tr>
            <th>Type</th>
@@ -14,6 +15,7 @@ function TransactionHistory({items}) {
    <tbody>
       {items.map(TransactionHistoryRaw)} 
    </tbody>
+        
    </table>
     )
 }
